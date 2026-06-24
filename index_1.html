@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laya Burger × CP Group | ข้อเสนอความร่วมมือเชิงกลยุทธ์</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;700;900&family=Noto+Sans+Thai:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF7EF;--paper-2:#F4EDDF;--ink:#17312A;--ink-soft:#3C5249;
+    --green:#1F6F5C;--green-deep:#16463B;--amber:#DD8123;--amber-soft:#E6A24A;
+    --chili:#C53A28;--gold:#E4B85C;--line:#DED3BF;--line-soft:#EAE2D2;--maxw:1120px;
+    --serif:"Noto Serif Thai",serif;--sans:"Noto Sans Thai",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  section{position:relative;}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:14px;margin:0 0 22px;}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--amber);display:inline-block;}
+  .eyebrow .num{color:var(--ink-soft);}
+
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-soft);}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+  .brand{font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.02em;}
+  .brand .x{color:var(--amber);margin:0 8px;font-weight:500;}
+  .langnote{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink-soft);}
+  .langnote b{color:var(--green);font-weight:500;}
+
+  .hero{padding:96px 0 84px;overflow:hidden;}
+  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,6vw,66px);line-height:1.18;letter-spacing:-.01em;margin:0 0 30px;color:var(--ink);}
+  .hero h1 .hl{color:var(--amber);}
+  .hero h1 .ret{color:var(--green);}
+  .hero-sub{font-size:clamp(16px,2vw,20px);color:var(--ink-soft);max-width:52ch;margin:0 0 40px;font-weight:300;}
+  .hero-sub b{font-weight:600;color:var(--ink);}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:22px;}
+  .hero-meta .dot{width:6px;height:6px;border-radius:50%;background:var(--chili);display:inline-block;margin-right:8px;vertical-align:middle;}
+  .ribbon{margin-top:54px;height:2px;width:100%;background:repeating-linear-gradient(90deg,var(--amber) 0 22px,transparent 22px 40px);opacity:.5;}
+
+  .blk{padding:78px 0;border-top:1px solid var(--line);}
+  .blk-head{max-width:66ch;}
+  .blk h2{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.3;margin:0 0 18px;letter-spacing:-.005em;}
+  .blk h2 .accent{color:var(--amber);}
+  .lead{font-size:clamp(15.5px,1.7vw,18px);color:var(--ink-soft);font-weight:300;max-width:64ch;}
+  .lead b{font-weight:600;color:var(--ink);}
+
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);margin:48px 0 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .stat{padding:30px 26px;border-right:1px solid var(--line-soft);}
+  .stat:last-child{border-right:none;}
+  .stat .v{font-family:var(--serif);font-weight:900;font-size:clamp(28px,3.4vw,40px);color:var(--green-deep);line-height:1;}
+  .stat .v small{font-size:.5em;font-weight:700;margin-left:2px;}
+  .stat .l{font-size:13px;color:var(--ink-soft);margin-top:12px;letter-spacing:.02em;}
+  .engine{margin-top:34px;background:var(--ink);color:var(--paper);border-radius:14px;padding:34px 36px;}
+  .engine .ttl{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber-soft);margin-bottom:18px;}
+  .engine .ip-list{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
+  .chip{font-size:14px;border:1px solid rgba(251,247,239,.28);border-radius:999px;padding:7px 16px;color:var(--paper);background:rgba(255,255,255,.04);}
+  .chip b{color:var(--gold);font-weight:700;}
+  .engine .thesis{font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);font-weight:500;line-height:1.5;margin:0;color:#fff;}
+  .engine .thesis .em{color:var(--amber-soft);}
+
+  .loop-stage{margin-top:50px;}
+  .loop-diagram{display:grid;grid-template-columns:1fr minmax(180px,260px) 1fr;align-items:stretch;}
+  .node-col{display:flex;flex-direction:column;justify-content:center;}
+  .node-label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .node-col.right .node-label{justify-content:flex-end;}
+  .item{padding:15px 18px;border:1px solid var(--line);border-radius:11px;background:#fff;margin-bottom:12px;font-size:14.5px;line-height:1.5;}
+  .item:last-child{margin-bottom:0;}
+  .item .k{font-weight:700;color:var(--green-deep);}
+  .item .s{display:block;color:var(--ink-soft);font-size:13px;margin-top:3px;}
+  .node-col.right .item{text-align:right;border-color:var(--amber-soft);}
+  .node-col.right .item .k{color:var(--amber);}
+  .loop-core{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 8px;}
+  .loop-core svg{width:100%;max-width:240px;height:auto;display:block;}
+  .loop-core .cap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:132px;}
+  .loop-core .cap .big{font-family:var(--serif);font-weight:900;font-size:19px;color:var(--ink);line-height:1.2;}
+  .loop-core .cap .sm{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--ink-soft);margin-top:6px;}
+  .flow{stroke-dasharray:7 9;animation:march 1.4s linear infinite;}
+  .flow.rev{animation:marchrev 1.4s linear infinite;}
+  @keyframes march{to{stroke-dashoffset:-16;}}
+  @keyframes marchrev{to{stroke-dashoffset:16;}}
+  .loop-tag{margin-top:40px;text-align:center;font-family:var(--serif);font-weight:700;font-size:clamp(19px,2.6vw,28px);color:var(--ink);line-height:1.5;}
+  .loop-tag .em{color:var(--amber);}
+
+  .opp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px;}
+  .opp{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 26px;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+  .opp::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--amber);}
+  .opp.means::before{background:var(--green);}
+  .opp .ono{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--amber);margin-bottom:18px;}
+  .opp.means .ono{color:var(--green);}
+  .opp .borrow{font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.03em;margin-bottom:8px;}
+  .opp h3{font-family:var(--serif);font-weight:700;font-size:22px;margin:0 0 14px;line-height:1.35;}
+  .opp p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.7;}
+  .opp p b{color:var(--ink);font-weight:600;}
+
+  .feas{margin-top:22px;border:1px solid var(--line);border-radius:14px;background:var(--paper-2);padding:28px 30px;}
+  .feas .ft{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-deep);margin-bottom:16px;}
+  .feas-rows{display:grid;gap:8px;}
+  .frow{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start;font-size:14.5px;line-height:1.6;}
+  .frow .mk{font-weight:700;font-family:var(--mono);}
+  .frow.ok .mk{color:var(--green);}
+  .frow.no .mk{color:var(--chili);}
+  .frow.mb .mk{color:var(--amber);}
+  .frow b{font-weight:600;}
+  .feas .foot{margin-top:18px;font-size:13.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:16px;}
+  .feas .foot b{color:var(--green-deep);}
+
+  .prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:46px;}
+  .prod{background:var(--ink);color:var(--paper);border-radius:16px;padding:34px 32px;}
+  .prod .ptag{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-soft);margin-bottom:16px;}
+  .prod h3{font-family:var(--serif);font-weight:900;font-size:clamp(24px,3vw,32px);margin:0 0 8px;color:#fff;}
+  .prod .psub{color:rgba(251,247,239,.7);font-size:14px;margin:0 0 22px;font-weight:300;}
+  .sauces{display:grid;gap:10px;}
+  .sauce{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(251,247,239,.12);}
+  .swatch{width:22px;height:22px;border-radius:50%;flex:none;box-shadow:0 0 0 3px rgba(255,255,255,.06);}
+  .sauce .sn{font-weight:500;font-size:15px;color:#fff;}
+  .sauce .sd{font-size:12.5px;color:rgba(251,247,239,.62);}
+  .prod ul{margin:0;padding:0;list-style:none;display:grid;gap:14px;}
+  .prod ul li{font-size:14.5px;line-height:1.6;color:rgba(251,247,239,.86);padding-left:20px;position:relative;}
+  .prod ul li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--amber);}
+  .prod ul li b{color:#fff;font-weight:600;}
+  .ext{margin-top:18px;border:1px solid var(--line);border-radius:14px;padding:26px 30px;background:#fff;}
+  .ext .et{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px;}
+  .ext-chips{display:flex;flex-wrap:wrap;gap:10px;}
+  .echip{font-size:14px;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line);color:var(--ink);}
+  .echip b{color:var(--green-deep);}
+
+  .road{margin-top:48px;display:grid;position:relative;}
+  .road::before{content:"";position:absolute;left:140px;top:18px;bottom:18px;width:2px;background:var(--line);}
+  .phase{display:grid;grid-template-columns:140px 1fr;gap:30px;padding:22px 0;position:relative;}
+  .phase .when{font-family:var(--mono);font-size:13px;color:var(--amber);letter-spacing:.03em;padding-top:3px;}
+  .phase .when .pn{display:block;color:var(--ink);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;}
+  .phase .body{position:relative;padding-left:34px;}
+  .phase .body::before{content:"";position:absolute;left:-6px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2.5px solid var(--green);}
+  .phase.lead-phase .body::before{background:var(--amber);border-color:var(--amber);}
+  .phase .body h4{font-family:var(--serif);font-weight:700;font-size:19px;margin:0 0 7px;}
+  .phase .body p{margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.65;}
+  .phase .body p b{color:var(--ink);font-weight:600;}
+
+  .vision{background:var(--green-deep);color:var(--paper);border-top:none;}
+  .vision .wrap{padding-top:92px;padding-bottom:96px;}
+  .vision .eyebrow{color:var(--amber-soft);}
+  .vision .eyebrow::before{background:var(--amber-soft);}
+  .vision h2{font-family:var(--serif);font-weight:900;font-size:clamp(30px,5vw,54px);line-height:1.24;margin:0 0 26px;color:#fff;letter-spacing:-.01em;}
+  .vision h2 .em{color:var(--amber-soft);}
+  .vision p{font-size:clamp(16px,1.9vw,19px);color:rgba(251,247,239,.82);max-width:58ch;font-weight:300;margin:0 0 8px;}
+  .vision .sign{margin-top:48px;border-top:1px solid rgba(251,247,239,.2);padding-top:24px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;color:rgba(251,247,239,.7);display:flex;flex-wrap:wrap;gap:8px 26px;}
+  .vision .sign b{color:var(--gold);font-weight:500;}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media(max-width:860px){
+    .stat-row{grid-template-columns:1fr 1fr;}
+    .stat:nth-child(2){border-right:none;}
+    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}
+    .opp-grid{grid-template-columns:1fr;}
+    .prod-grid{grid-template-columns:1fr;}
+    .loop-diagram{grid-template-columns:1fr;gap:6px;}
+    .loop-core{order:-1;margin-bottom:18px;}
+    .loop-core svg{max-width:200px;}
+    .node-col.right .item{text-align:left;}
+    .node-col.right .node-label{justify-content:flex-start;}
+    .road::before{left:5px;}
+    .phase{grid-template-columns:1fr;gap:6px;}
+    .phase .when{padding-top:0;}
+    .phase .body{padding-left:26px;}
+    .phase .body::before{left:-1px;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 20px;}
+    .langnote{display:none;}
+    .hero{padding:64px 0 60px;}
+    .blk{padding:58px 0;}
+  }
+  @media print{
+    .topbar{display:none;}
+    body{background:#fff;}
+    .reveal{opacity:1;transform:none;}
+    .engine,.prod,.vision{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .flow,.flow.rev{animation:none;}
+    .reveal{transition:none;opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <div class="brand">Laya Burger<span class="x">&times;</span>CP Group</div>
+  <div class="langnote">ภาษาไทย &middot; <b>EN / 繁中 available</b></div>
+</div></header>
+
+<section class="hero"><div class="wrap reveal">
+  <p class="eyebrow"><span class="num">01</span> ข้อเสนอความร่วมมือเชิงกลยุทธ์</p>
+  <h1>นำ<span class="hl">รสไทยแท้</span><br>เข้าสู่ผู้นำตลาดบรันช์ของไต้หวัน &mdash;<br>แล้วส่งกลับบ้านให้<span class="ret">แข็งแกร่งกว่าเดิม</span></h1>
+  <p class="hero-sub">เริ่มจากมรดกรสชาติไทย เครือข่ายซัพพลายระดับโลก และพลังวิจัยพัฒนาของซีพี ลายายกระดับแบรนด์ของตนเอง พร้อมสร้าง<b>หน้าร้านเรือธง</b>ให้ซีพีในตลาดที่เติบโตเต็มที่ และส่งออร่าความเป็นรสไทยที่ถูกขยายผลกลับคืนสู่ประเทศไทย</p>
+  <div class="hero-meta">
+    <span><span class="dot"></span>Laya Burger (เครือ Sun Spark)</span>
+    <span>เครือซีพี &middot; ระบบนิเวศ 7-Eleven ไทย</span>
+    <span>PROPOSAL / 2026</span>
+  </div>
+  <div class="ribbon"></div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <div class="blk-head reveal">
+    <p class="eyebrow"><span class="num">02</span> ทำไมต้องลายา</p>
+    <h2>เวทีที่เปลี่ยนทุกแบรนด์ให้กลายเป็น<span class="accent">กระแสทั้งประเทศ</span></h2>
+    <p class="lead">ก่อนเริ่มความร่วมมือ นี่คือสถานะของลายาในสายตาของซีพี ลายาคือผู้นำตลาดบรันช์ของไต้หวัน มีช่องทางทั้งหน้าร้านและดิจิทัลในระดับสเกล พร้อมเครื่องยนต์โคแบรนด์ที่ตลาดพิสูจน์แล้วครั้งแล้วครั้งเล่า</p>
+  </div>
+  <div class="stat-row reveal">
+    <div class="stat"><div class="v">NO.<small>1</small></div><div class="l">ผู้นำตลาดบรันช์ของไต้หวัน</div></div>
+    <div class="stat"><div class="v">500<small>+</small></div><div class="l">สาขาทั่วไต้หวัน</div></div>
+    <div class="stat"><div class="v">30<small>ล.+</small></div><div class="l">มื้อที่เสิร์ฟในปี 2025</div></div>
+    <div class="stat"><div class="v">1<small>ล.+</small></div><div class="l">สมาชิก Laya Now &middot; สั่งออนไลน์ 60%+</div></div>
+  </div>
+  <div class="engine reveal">
+    <div class="ttl">เครื่องยนต์โคแบรนด์ที่พิสูจน์แล้ว</div>
+    <div class="ip-list">
+      <span class="chip">Dragon Quest Slime &mdash; <b>ล็อตแรกขายเกิน 100,000 ชิ้น</b></span>
+      <span class="chip">Sky Matcha</span>
+      <span class="chip">KitKat</span>
+      <span class="chip">Morinaga</span>
+      <span class="chip">Fujiya</span>
+      <span class="chip">Edward Lee</span>
+    </div>
+    <p class="thesis">ทุก IP ระดับโลกเหล่านี้กลายเป็นปรากฏการณ์ในไต้หวัน &mdash; พิสูจน์ว่าลายาขยายผลให้<span class="em">ทุกแบรนด์ที่มีเรื่องราว</span>ได้ และรสไทยแท้ของซีพีคือวัตถุดิบชิ้นต่อไปที่เข้ากันที่สุด</p>
+  </div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <div class="blk-head reveal">
+    <p class="eyebrow"><span class="num">03</span> ตรรกะหลัก &middot; เครื่องขยายมูลค่า</p>
+    <h2>ลายาคือ<span class="accent">เครื่องขยายมูลค่า</span>ให้รสไทยของซีพี</h2>
+    <p class="lead">ซีพีส่งมอบสินทรัพย์หลักให้ลายา ในตลาดที่เติบโตเต็มที่มันถูกขยายเป็นมูลค่าแบรนด์ระดับปรากฏการณ์ แล้วส่งกลับสู่ไทยอย่างแข็งแกร่งกว่าเดิม ทั้งสองฝ่ายได้สิ่งที่ต่างฝ่ายเข้าไม่ถึงด้วยตัวเอง</p>
+  </div>
+  <div class="loop-stage reveal"><div class="loop-diagram">
+    <div class="node-col left">
+      <div class="node-label">ซีพี &rarr; ลายา &middot; สินทรัพย์ที่มอบให้</div>
+      <div class="item"><span class="k">มรดกรสไทยแท้</span><span class="s">องค์ความรู้รสชาติและสูตรจาก CPF&middot;PIM</span></div>
+      <div class="item"><span class="k">เครือข่ายซัพพลายระดับโลก</span><span class="s">แหล่งกุ้ง/อาหารทะเลใหญ่สุดในโลก &mdash; โปรตีนที่นำเข้าได้</span></div>
+      <div class="item"><span class="k">เครื่องยนต์ R&amp;D</span><span class="s">การร่วมพัฒนาและผลิตจำนวนมากของ CPF&middot;CPRAM&middot;PIM</span></div>
+      <div class="item"><span class="k">ระบบนิเวศ 7-Eleven</span><span class="s">ตลาดไทย ช่องทาง และการรับรองแบรนด์</span></div>
+    </div>
+    <div class="loop-core">
+          <svg viewBox="0 0 220 220" role="img" aria-label="แผนภาพเครื่องขยายมูลค่า">
+            <defs>
+              <marker id="arrowA" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#DD8123"></path></marker>
+              <marker id="arrowB" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1F6F5C"></path></marker>
+            </defs>
+            <path class="flow" d="M40,86 A70,70 0 0 1 180,86" fill="none" stroke="#DD8123" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrowA)"></path>
+            <path class="flow rev" d="M180,134 A70,70 0 0 1 40,134" fill="none" stroke="#1F6F5C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrowB)"></path>
+            <circle cx="110" cy="110" r="58" fill="none" stroke="#DED3BF" stroke-width="1"></circle>
+          </svg>
+          <div class="cap"><div class="big">ขยาย<br>มูลค่า</div><div class="sm">VALUE AMPLIFIER</div></div>
+        </div>
+    <div class="node-col right">
+      <div class="node-label">ลายา &rarr; ซีพี &middot; มูลค่าที่ส่งกลับ</div>
+      <div class="item"><span class="k">หน้าร้านเรือธง</span><span class="s">การปรากฏของแบรนด์ผ่าน 500 สาขาในตลาดที่เติบโตเต็มที่</span></div>
+      <div class="item"><span class="k">เครื่องขยายโคแบรนด์</span><span class="s">พลังเปลี่ยนรสไทยของซีพีให้เป็นปรากฏการณ์</span></div>
+      <div class="item"><span class="k">การเข้าถึงดิจิทัลและสมาชิก</span><span class="s">ดาต้าและฐานสมาชิกล้านคนของ Laya Now</span></div>
+      <div class="item"><span class="k">ช่องทางส่งกลับ</span><span class="s">สินค้าที่สำเร็จกลับคืนสู่ 7-Eleven ไทย</span></div>
+    </div>
+  </div>
+  <p class="loop-tag">รสไทยของซีพี ถูก<span class="em">ขยายผล</span>โดยผู้นำบรันช์ไต้หวัน<br>แล้ว<span class="em">กลับคืนสู่บ้าน</span>อย่างแข็งแกร่งกว่าเดิม</p>
+  </div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <div class="blk-head reveal">
+    <p class="eyebrow"><span class="num">04</span> โอกาสความร่วมมือ</p>
+    <h2>สอง<span class="accent">ไลน์สินค้า</span><br>หนึ่งเครื่องยนต์ร่วมพัฒนาอยู่เบื้องหลัง</h2>
+    <p class="lead">โมเดลความร่วมมือโฟกัสที่สองไลน์สินค้าที่ลงมือทำได้จริง &mdash; แต่ละไลน์ต่อยอดจากสินทรัพย์หลักของซีพี เพื่อสร้างมูลค่าที่แตกต่างในตลาดของลายา ส่วนเครื่องยนต์ R&amp;D ของ CPF&middot;CPRAM&middot;PIM คือกลไกที่ทำให้ทั้งสองไลน์เดินหน้า</p>
+  </div>
+  <div class="opp-grid reveal">
+    <div class="opp">
+      <div class="ono">ไลน์สินค้า 01</div>
+      <div class="borrow">สินทรัพย์หลัก &mdash; มรดกรสไทยแท้ CP/PIM</div>
+      <h3>ซอสรสไทย</h3>
+      <p>นำด้วย<b>มายองเนสสไตล์ไทย</b> ต่อยอดสู่รสไทยอื่นได้ คานงัดที่ใหญ่ที่สุด &mdash; <b>เปลี่ยนรส ไม่เปลี่ยนไลน์ผลิต</b> ไลน์เบอร์เกอร์ไก่ ข้าวเบอร์เกอร์ เฟรนช์ฟรายส์ และโรตีไข่เดิม กลายเป็น &ldquo;ซีรีส์รสไทย&rdquo; ได้ด้วยการเปลี่ยนซอสเพียงตัวเดียว ซอส = <b>IP รสชาติ</b>ที่ขยายสเกลและวางขายปลีกได้</p>
+    </div>
+    <div class="opp">
+      <div class="ono">ไลน์สินค้า 02</div>
+      <div class="borrow">สินทรัพย์หลัก &mdash; เครือข่ายกุ้งระดับโลกของซีพี</div>
+      <h3>เมนูหลักโปรตีนอาหารทะเล</h3>
+      <p>นำด้วย<b>ข้าวเบอร์เกอร์ทอดมันกุ้งทองคำ</b> และหากกฎระเบียบเอื้ออำนวย ต่อยอดสู่<b>เบอร์เกอร์ไก่รสไทย</b>อื่น ซีพีคือผู้ผลิตกุ้งรายใหญ่ที่สุดในโลก &mdash; อาหารทะเลคือ<b>เส้นทางโปรตีนที่นำเข้าได้</b> เลี่ยงข้อจำกัดการนำเข้าเนื้อสัตว์ พร้อมเล่าเรื่อง &ldquo;ซัพพลายเชนซีพี&rdquo;</p>
+    </div>
+    <div class="opp means">
+      <div class="ono">เครื่องยนต์เบื้องหลัง</div>
+      <div class="borrow">สินทรัพย์หลัก &mdash; พลัง R&amp;D CPF&middot;CPRAM&middot;PIM</div>
+      <h3>การร่วมพัฒนา (กลไก)</h3>
+      <p>ไม่ใช่สินค้าอีกตัว แต่คือ<b>กลไก</b>ที่ทำให้สองไลน์ข้างต้นเกิดขึ้นได้ องค์ความรู้รสไทย การทำต้นแบบรวดเร็ว การเปิดตัวสองทาง MOU และการแลกเปลี่ยนทรัพยากร คือวิธีการที่จุดเครื่องยนต์นี้ให้ติด</p>
+    </div>
+  </div>
+  <div class="feas reveal">
+    <div class="ft">ตรวจสอบความเป็นไปได้ &middot; Feasibility Check</div>
+    <div class="feas-rows">
+      <div class="frow ok"><span class="mk">&check;</span><div><b>ซอส / น้ำพริกแกง / เครื่องปรุง (ไม่มีเนื้อสัตว์)</b> &mdash; นำเข้าหรือผลิตในประเทศได้ เมื่อผ่านการฆ่าเชื้อเชิงพาณิชย์และติดฉลากตามมาตรฐานความปลอดภัยอาหาร</div></div>
+      <div class="frow ok"><span class="mk">&check;</span><div><b>กุ้ง / อาหารทะเล (สด สุก ชุบแป้ง)</b> &mdash; นำเข้าได้ ภายใต้การตรวจกักกันและตรวจความปลอดภัยอาหารเป็นรายการ</div></div>
+      <div class="frow ok"><span class="mk">&check;</span><div><b>กะทิ &middot; ผลิตภัณฑ์มะพร้าว &middot; ข้าว &middot; เส้น</b> &mdash; พืชล้วน อุปสรรคนำเข้าต่ำ</div></div>
+      <div class="frow mb"><span class="mk">&#9651;</span><div><b>ซองรีทอร์ตมีเนื้อสัตว์ที่ฆ่าเชื้อเชิงพาณิชย์</b> &mdash; เป็นไปได้แบบมีเงื่อนไข พิจารณาเป็นกรณีตามกฎการนำเข้า</div></div>
+      <div class="frow no"><span class="mk">&times;</span><div><b>ไก่ / หมูจากไทย (รวมแบบสุกและสุญญากาศ)</b> &mdash; ถูกจำกัดด้วยมาตรการควบคุมโรค นำเข้าไม่ได้</div></div>
+    </div>
+    <div class="foot"><b>แนวทางลงมือ:</b> สำหรับเบอร์เกอร์ไก่รสไทยในไลน์สินค้า 02 โปรตีนไก่และหมูที่ต้องใช้ผลิตในไต้หวันโดยหน่วยงานในเครือซีพีที่ไต้หวันเอง &mdash; สอดคล้องกับกฎความปลอดภัยอาหารไต้หวันและขยายกำลังผลิตได้รวดเร็ว ทำให้ความร่วมมือลงสู่ภาคปฏิบัติได้เต็มที่</div>
+  </div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <div class="blk-head reveal">
+    <p class="eyebrow"><span class="num">05</span> สินค้าเรือธง</p>
+    <h2>เปลี่ยนความร่วมมือให้เป็นสิ่งที่<span class="accent">เห็นได้ ชิมได้</span></h2>
+    <p class="lead">แต่ละไลน์สินค้านำเสนอสินค้าเรือธงหนึ่งตัวที่แสดงว่าตรรกะทั้งหมดลงมือได้จริง พร้อมส่วนต่อยอดที่พัฒนาคู่ขนานได้</p>
+  </div>
+  <div class="prod-grid reveal">
+    <div class="prod">
+      <div class="ptag">ไลน์ 01 &middot; ซอสรสไทย</div>
+      <h3>แพลตฟอร์มซอสมายองเนสไทย</h3>
+      <p class="psub">เบสอิมัลชันเดียว ต่อยอดสามซอสซิกเนเจอร์ &mdash; เป็นคานงัดทั้งเมนู (และต่อยอดรสไทยอื่นได้)</p>
+      <div class="sauces">
+        <div class="sauce"><span class="swatch" style="background:#E89A2C"></span><div><div class="sn">มายองเนสไทยหวานเผ็ด</div><div class="sd">กลิ่นรสน้ำจิ้มไก่</div></div></div>
+        <div class="sauce"><span class="swatch" style="background:#C53A28"></span><div><div class="sn">มายองเนสกระเทียมศรีราชา</div><div class="sd">เปรี้ยวเผ็ดและกระเทียมแบบไทย เข้มกว่าแบบสหรัฐฯ</div></div></div>
+        <div class="sauce"><span class="swatch" style="background:#9DBE5A"></span><div><div class="sn">มายองเนสน้ำจิ้มซีฟู้ด</div><div class="sd">มะนาว &middot; น้ำปลา &middot; พริก &middot; ผักชี &mdash; ทำมาเพื่อกุ้ง</div></div></div>
+      </div>
+    </div>
+    <div class="prod">
+      <div class="ptag">ไลน์ 02 &middot; เมนูหลักโปรตีนอาหารทะเล</div>
+      <h3>ข้าวเบอร์เกอร์ทอดมันกุ้งทองคำ</h3>
+      <p class="psub">ทอดมันกุ้งกรอบจากกุ้งบดซีพี วางบนไลน์ข้าวเบอร์เกอร์เดิมของลายา</p>
+      <ul>
+        <li><b>เนื้อแพตตี้</b> &mdash; ทอดมันกุ้งกรอบจากแหล่งกุ้งระดับโลกของซีพี นำเข้าหรือร่วมผลิตในไต้หวันได้</li>
+        <li><b>การประกอบ</b> &mdash; ทอดมันกุ้งกรอบ + มายองเนสน้ำจิ้มซีฟู้ด + ผักชี/ใบกะเพรา + บันข้าว</li>
+        <li><b>โฟกัส R&amp;D</b> &mdash; สัดส่วนกุ้งและสัมผัสเด้ง ความกรอบที่คงอยู่ตลอดการเสิร์ฟ ฉลากสารก่อภูมิแพ้สัตว์น้ำมีเปลือก</li>
+        <li><b>ส่วนต่อยอด</b> &mdash; หรือเบอร์เกอร์ไก่รสไทยอื่น ผลิตในไต้หวันโดยหน่วยงานซีพีที่ไต้หวัน เปิดตัวเมื่อกฎเอื้ออำนวย</li>
+      </ul>
+    </div>
+  </div>
+  <div class="ext reveal">
+    <div class="et">ส่วนต่อยอดคู่ขนาน &middot; ผ่านการตรวจความเป็นไปได้ทั้งหมด</div>
+    <div class="ext-chips">
+      <span class="echip">ข้าวเบอร์เกอร์/โรตีไข่<b>รสกะเพรา</b></span>
+      <span class="echip">นักเก็ต<b>ซอสจิ้มต้มยำ</b></span>
+      <span class="echip">เบอร์เกอร์ไก่ย่าง<b>ซอสสะเต๊ะ</b></span>
+      <span class="echip"><b>ของหวานกะทิ</b> (ขนมปังกะทิ &middot; ฝอยทอง)</span>
+      <span class="echip"><b>ชาไทย / กาแฟไทย</b></span>
+    </div>
+  </div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <div class="blk-head reveal">
+    <p class="eyebrow"><span class="num">06</span> แผนความร่วมมือ</p>
+    <h2>นำเครื่องขยายมูลค่าลงสู่ภาคปฏิบัติ <span class="accent">ทีละเฟส</span></h2>
+    <p class="lead">MOU การร่วมพัฒนารสชาติ และการแลกเปลี่ยนทรัพยากร คือวิธีการที่ทำให้วงจรนี้เป็นจริง การตรวจสอบกฎระเบียบดำเนินคู่ขนานกับ R&amp;D เพื่อยืนยันความเป็นไปได้ก่อนการผลิต</p>
+  </div>
+  <div class="road reveal">
+    <div class="phase lead-phase"><div class="when"><span class="pn">Phase 0</span>M0&ndash;2</div><div class="body"><h4>พันธมิตรเชิงกลยุทธ์</h4><p>ลงนาม <b>MOU</b> เชิงกลยุทธ์ กำหนดขอบเขต การแบ่ง IP และกำไร กลไกการกำกับดูแล และตั้งคณะทำงานร่วม วางรากฐานความเป็นพันธมิตรให้มั่นคงก่อน</p></div></div>
+    <div class="phase"><div class="when"><span class="pn">Phase 1</span>M2&ndash;6</div><div class="body"><h4>ร่วมวิจัยพัฒนา</h4><p>PIM/CPRAM พัฒนาแพลตฟอร์มซอสไทยและข้าวเบอร์เกอร์ทอดมันกุ้ง ทดลองผลิตในไต้หวัน <b>การตรวจกฎระเบียบดำเนินคู่ขนาน</b> (ความปลอดภัยอาหาร การกักกัน ฉลากสัตว์น้ำมีเปลือก) พร้อมทดสอบผู้บริโภคในสาขาลายา</p></div></div>
+    <div class="phase"><div class="when"><span class="pn">Phase 2</span>M6&ndash;9</div><div class="body"><h4>ทดลองขายและเปิดตัว</h4><p>ทดลองในสาขาที่เลือก &rarr; เปิดตัวเต็มรูปแบบทั่ว 500 สาขา เริ่มการตลาดเพื่อเปลี่ยนสินค้าให้เป็นกระแสและยอดขาย</p></div></div>
+    <div class="phase"><div class="when"><span class="pn">Phase 3</span>M9&ndash;18+</div><div class="body"><h4>ส่งกลับสองทาง</h4><p>สินค้าที่สำเร็จ<b>กลับคืนสู่</b>ช่องทาง 7-Eleven / ซีพีในไทย ซอสบรรจุขวดวางขายปลีก ตั้งแพลตฟอร์มร่วมพัฒนาถาวร และประเมินการเข้าสู่เอเชียตะวันออกเฉียงใต้ของลายาผ่านช่องทางซีพี</p></div></div>
+  </div>
+</div></section>
+
+<section class="blk vision"><div class="wrap reveal">
+  <p class="eyebrow"><span class="num">07</span> วิสัยทัศน์</p>
+  <h2>ความเป็นพันธมิตรไทย&ndash;ไต้หวันระดับเรือธง:<br><span class="em">ชนะในไต้หวัน</span> แล้ว<span class="em">กลับสู่ไทย</span></h2>
+  <p>ลายาขยายรสไทยของซีพีในตลาดที่เติบโตเต็มที่และยกระดับแบรนด์ของตนเอง ซีพีได้เห็นรสไทยของตนกลับบ้านอย่างผู้ชนะ ไม่ใช่โคแบรนด์ครั้งเดียวจบ แต่คือวงจรระยะยาวที่ต่างฝ่ายทำให้กันแข็งแกร่งขึ้น</p>
+  <div class="sign"><span>Laya Burger &times; CP Group</span><span>STRATEGIC PARTNERSHIP PROPOSAL &middot; 2026</span></div>
+</div></section>
+<script>
+  (function(){
+    var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(rm || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
+</body>
+</html>
