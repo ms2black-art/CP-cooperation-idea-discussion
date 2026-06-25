@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拉亞漢堡 × CP 集團｜策略合作提案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF7EF;--paper-2:#F4EDDF;--ink:#17312A;--ink-soft:#3C5249;
+    --green:#1F6F5C;--green-deep:#16463B;--amber:#DD8123;--amber-soft:#E6A24A;
+    --chili:#C53A28;--gold:#E4B85C;--line:#DED3BF;--line-soft:#EAE2D2;--maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;font-weight:400;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  .serif{font-family:"Noto Serif TC",serif;}
+  .mono{font-family:"IBM Plex Mono",monospace;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  section{position:relative;}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:14px;margin:0 0 22px;}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--amber);display:inline-block;}
+  .eyebrow .num{color:var(--ink-soft);}
+
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-soft);}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+  .brand{font-family:"Noto Serif TC",serif;font-weight:700;font-size:16px;letter-spacing:.02em;}
+  .brand .x{color:var(--amber);margin:0 8px;font-weight:500;}
+  .langnote{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;color:var(--ink-soft);}
+  .langnote b{color:var(--green);font-weight:500;}
+
+  .hero{padding:96px 0 84px;overflow:hidden;}
+  .hero h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(34px,6vw,68px);line-height:1.16;letter-spacing:-.01em;margin:0 0 30px;color:var(--ink);}
+  .hero h1 .hl{color:var(--amber);white-space:nowrap;}
+  .hero h1 .ret{color:var(--green);}
+  .hero-sub{font-size:clamp(16px,2vw,20px);color:var(--ink-soft);max-width:46ch;margin:0 0 40px;font-weight:300;}
+  .hero-sub b{font-weight:500;color:var(--ink);}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.06em;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:22px;}
+  .hero-meta .dot{width:6px;height:6px;border-radius:50%;background:var(--chili);display:inline-block;margin-right:8px;vertical-align:middle;}
+  .ribbon{margin-top:54px;height:2px;width:100%;background:repeating-linear-gradient(90deg,var(--amber) 0 22px,transparent 22px 40px);opacity:.5;}
+
+  .blk{padding:78px 0;border-top:1px solid var(--line);}
+  .blk-head{max-width:64ch;}
+  .blk h2{font-family:"Noto Serif TC",serif;font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.28;margin:0 0 18px;letter-spacing:-.005em;}
+  .blk h2 .accent{color:var(--amber);}
+  .lead{font-size:clamp(15.5px,1.7vw,18px);color:var(--ink-soft);font-weight:300;max-width:62ch;}
+  .lead b{font-weight:600;color:var(--ink);}
+
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);margin:48px 0 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .stat{padding:30px 26px;border-right:1px solid var(--line-soft);}
+  .stat:last-child{border-right:none;}
+  .stat .v{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(28px,3.4vw,40px);color:var(--green-deep);line-height:1;}
+  .stat .v small{font-size:.5em;font-weight:700;margin-left:2px;}
+  .stat .l{font-size:13px;color:var(--ink-soft);margin-top:12px;letter-spacing:.02em;}
+  .engine{margin-top:34px;background:var(--ink);color:var(--paper);border-radius:14px;padding:34px 36px;}
+  .engine .ttl{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--amber-soft);margin-bottom:18px;}
+  .engine .ip-list{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
+  .chip{font-size:14px;border:1px solid rgba(251,247,239,.28);border-radius:999px;padding:7px 16px;color:var(--paper);background:rgba(255,255,255,.04);}
+  .chip b{color:var(--gold);font-weight:700;}
+  .engine .thesis{font-family:"Noto Serif TC",serif;font-size:clamp(18px,2.2vw,24px);font-weight:500;line-height:1.5;margin:0;color:#fff;}
+  .engine .thesis .em{color:var(--amber-soft);}
+
+  .loop-stage{margin-top:50px;}
+  .loop-diagram{display:grid;grid-template-columns:1fr minmax(180px,260px) 1fr;align-items:stretch;}
+  .node-col{display:flex;flex-direction:column;justify-content:center;}
+  .node-label{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .node-col.right .node-label{justify-content:flex-end;}
+  .item{padding:15px 18px;border:1px solid var(--line);border-radius:11px;background:#fff;margin-bottom:12px;font-size:14.5px;line-height:1.5;}
+  .item:last-child{margin-bottom:0;}
+  .item .k{font-weight:700;color:var(--green-deep);}
+  .item .s{display:block;color:var(--ink-soft);font-size:13px;margin-top:3px;}
+  .node-col.right .item{text-align:right;border-color:var(--amber-soft);}
+  .node-col.right .item .k{color:var(--amber);}
+  .loop-core{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 8px;}
+  .loop-core svg{width:100%;max-width:240px;height:auto;display:block;}
+  .loop-core .cap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:120px;}
+  .loop-core .cap .big{font-family:"Noto Serif TC",serif;font-weight:900;font-size:19px;color:var(--ink);line-height:1.25;}
+  .loop-core .cap .sm{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.16em;color:var(--ink-soft);margin-top:6px;}
+  .flow{stroke-dasharray:7 9;animation:march 1.4s linear infinite;}
+  .flow.rev{animation:marchrev 1.4s linear infinite;}
+  @keyframes march{to{stroke-dashoffset:-16;}}
+  @keyframes marchrev{to{stroke-dashoffset:16;}}
+  .loop-tag{margin-top:40px;text-align:center;font-family:"Noto Serif TC",serif;font-weight:700;font-size:clamp(19px,2.6vw,28px);color:var(--ink);line-height:1.5;}
+  .loop-tag .em{color:var(--amber);}
+
+  .opp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px;}
+  .opp{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 26px;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+  .opp::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--amber);}
+  .opp.means::before{background:var(--green);}
+  .opp .ono{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;color:var(--amber);margin-bottom:18px;}
+  .opp.means .ono{color:var(--green);}
+  .opp .borrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);letter-spacing:.04em;margin-bottom:8px;}
+  .opp h3{font-family:"Noto Serif TC",serif;font-weight:700;font-size:22px;margin:0 0 14px;line-height:1.35;}
+  .opp p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.7;}
+  .opp p b{color:var(--ink);font-weight:600;}
+
+  .feas{margin-top:22px;border:1px solid var(--line);border-radius:14px;background:var(--paper-2);padding:28px 30px;}
+  .feas .ft{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--green-deep);margin-bottom:16px;}
+  .feas-rows{display:grid;gap:8px;}
+  .frow{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start;font-size:14.5px;line-height:1.6;}
+  .frow .mk{font-weight:700;font-family:"IBM Plex Mono",monospace;}
+  .frow.ok .mk{color:var(--green);}
+  .frow.no .mk{color:var(--chili);}
+  .frow.mb .mk{color:var(--amber);}
+  .frow b{font-weight:600;}
+  .feas .foot{margin-top:18px;font-size:13.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:16px;}
+  .feas .foot b{color:var(--green-deep);}
+
+  .prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:46px;}
+  .prod{background:var(--ink);color:var(--paper);border-radius:16px;padding:34px 32px;}
+  .prod .ptag{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber-soft);margin-bottom:16px;}
+  .prod h3{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(24px,3vw,32px);margin:0 0 8px;color:#fff;}
+  .prod .psub{color:rgba(251,247,239,.7);font-size:14px;margin:0 0 22px;font-weight:300;}
+  .sauces{display:grid;gap:10px;}
+  .sauce{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(251,247,239,.12);}
+  .swatch{width:22px;height:22px;border-radius:50%;flex:none;box-shadow:0 0 0 3px rgba(255,255,255,.06);}
+  .sauce .sn{font-weight:500;font-size:15px;color:#fff;}
+  .sauce .sd{font-size:12.5px;color:rgba(251,247,239,.62);}
+  .prod ul{margin:0;padding:0;list-style:none;display:grid;gap:14px;}
+  .prod ul li{font-size:14.5px;line-height:1.6;color:rgba(251,247,239,.86);padding-left:20px;position:relative;}
+  .prod ul li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--amber);}
+  .prod ul li b{color:#fff;font-weight:600;}
+  .ext{margin-top:18px;border:1px solid var(--line);border-radius:14px;padding:26px 30px;background:#fff;}
+  .ext .et{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px;}
+  .ext-chips{display:flex;flex-wrap:wrap;gap:10px;}
+  .echip{font-size:14px;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line);color:var(--ink);}
+  .echip b{color:var(--green-deep);}
+
+  .road{margin-top:48px;display:grid;position:relative;}
+  .road::before{content:"";position:absolute;left:140px;top:18px;bottom:18px;width:2px;background:var(--line);}
+  .phase{display:grid;grid-template-columns:140px 1fr;gap:30px;padding:22px 0;position:relative;}
+  .phase .when{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--amber);letter-spacing:.04em;padding-top:3px;}
+  .phase .when .pn{display:block;color:var(--ink);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px;}
+  .phase .body{position:relative;padding-left:34px;}
+  .phase .body::before{content:"";position:absolute;left:-6px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2.5px solid var(--green);}
+  .phase.lead-phase .body::before{background:var(--amber);border-color:var(--amber);}
+  .phase .body h4{font-family:"Noto Serif TC",serif;font-weight:700;font-size:19px;margin:0 0 7px;}
+  .phase .body p{margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.65;}
+  .phase .body p b{color:var(--ink);font-weight:600;}
+
+  .vision{background:var(--green-deep);color:var(--paper);border-top:none;}
+  .vision .wrap{padding-top:92px;padding-bottom:96px;}
+  .vision .eyebrow{color:var(--amber-soft);}
+  .vision .eyebrow::before{background:var(--amber-soft);}
+  .vision h2{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(30px,5vw,56px);line-height:1.22;margin:0 0 26px;color:#fff;letter-spacing:-.01em;}
+  .vision h2 .em{color:var(--amber-soft);}
+  .vision p{font-size:clamp(16px,1.9vw,19px);color:rgba(251,247,239,.82);max-width:54ch;font-weight:300;margin:0 0 8px;}
+  .vision .sign{margin-top:48px;border-top:1px solid rgba(251,247,239,.2);padding-top:24px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.1em;color:rgba(251,247,239,.7);display:flex;flex-wrap:wrap;gap:8px 26px;}
+  .vision .sign b{color:var(--gold);font-weight:500;}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media(max-width:860px){
+    .stat-row{grid-template-columns:1fr 1fr;}
+    .stat:nth-child(2){border-right:none;}
+    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}
+    .opp-grid{grid-template-columns:1fr;}
+    .prod-grid{grid-template-columns:1fr;}
+    .loop-diagram{grid-template-columns:1fr;gap:6px;}
+    .loop-core{order:-1;margin-bottom:18px;}
+    .loop-core svg{max-width:200px;}
+    .node-col.right .item{text-align:left;}
+    .node-col.right .node-label{justify-content:flex-start;}
+    .road::before{left:5px;}
+    .phase{grid-template-columns:1fr;gap:6px;}
+    .phase .when{padding-top:0;}
+    .phase .body{padding-left:26px;}
+    .phase .body::before{left:-1px;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 20px;}
+    .langnote{display:none;}
+    .hero{padding:64px 0 60px;}
+    .blk{padding:58px 0;}
+  }
+  @media print{
+    .topbar{display:none;}
+    body{background:#fff;}
+    .reveal{opacity:1;transform:none;}
+    .engine,.prod,.vision{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .flow,.flow.rev{animation:none;}
+    .reveal{transition:none;opacity:1;transform:none;}
+  }
+.langswitch{display:flex;gap:16px;align-items:center;}.langswitch a{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;color:var(--ink-soft);text-decoration:none;padding:6px 0;border-bottom:1.5px solid transparent;transition:color .2s ease,border-color .2s ease;}.langswitch a:hover{color:var(--amber);}.langswitch a.active{color:var(--green);border-bottom-color:var(--green);font-weight:500;}@media(max-width:560px){.langswitch{gap:12px;}.topbar .brand{font-size:13px;}}</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">拉亞漢堡 Laya Burger<span class="x">×</span>CP Group</div>
+    <nav class="langswitch"><a href="index.html">ภาษาไทย</a><a href="Laya_CP_Proposal_EN.html">EN</a><a href="Laya_CP_Proposal_ZH.html" class="active">繁中</a></nav>
+  </div>
+</header>
+
+<!-- 01 HERO -->
+<section class="hero">
+  <div class="wrap reveal">
+    <p class="eyebrow"><span class="num">01</span> 策略合作提案 · Strategic Partnership</p>
+    <h1>把<span class="hl">正宗泰味</span>，<br>帶進台灣早午餐龍頭——<br>再讓它<span class="ret">更強地回家</span>。</h1>
+    <p class="hero-sub">以 CP 的泰味血統、全球供應鏈與研發底蘊為起點，拉亞讓品牌升級；同時為 CP 打造一個成熟市場的<b>旗艦展示櫥窗</b>，把被放大的泰味光環，帶回泰國。</p>
+    <div class="hero-meta">
+      <span><span class="dot"></span>拉亞漢堡（森邦集團）</span>
+      <span>CP 集團 · 泰國 7-Eleven 生態系</span>
+      <span class="mono">PROPOSAL / 2026</span>
+    </div>
+    <div class="ribbon"></div>
+  </div>
+</section>
+
+<!-- 02 WHY LAYA -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head reveal">
+      <p class="eyebrow"><span class="num">02</span> 為什麼是拉亞</p>
+      <h2>一個能把任何品牌<span class="accent">變成全民話題</span>的舞台。</h2>
+      <p class="lead">在合作之前，先說清楚拉亞在 CP 眼中的份量。拉亞是台灣早午餐市場的領導品牌，擁有規模化的實體與數位通路，以及一支被市場反覆驗證的「聯名放大引擎」。</p>
+    </div>
+    <div class="stat-row reveal">
+      <div class="stat"><div class="v">NO.<small>1</small></div><div class="l">台灣早午餐市場領導品牌</div></div>
+      <div class="stat"><div class="v">500<small>+</small></div><div class="l">全台門市規模</div></div>
+      <div class="stat"><div class="v">3,000<small>萬+</small></div><div class="l">2025 年供應餐數</div></div>
+      <div class="stat"><div class="v">100<small>萬+</small></div><div class="l">Laya Now 會員 · 60%+ 線上點餐</div></div>
+    </div>
+    <div class="engine reveal">
+      <div class="ttl">聯名放大引擎 · Proven Co-Brand Engine</div>
+      <div class="ip-list">
+        <span class="chip">勇者鬥惡龍 史萊姆 <b>首檔破 10 萬份</b></span>
+        <span class="chip">天空抹茶</span>
+        <span class="chip">KitKat</span>
+        <span class="chip">森永牛奶糖</span>
+        <span class="chip">不二家</span>
+        <span class="chip">Edward Lee</span>
+      </div>
+      <p class="thesis">這些跨國 IP 都能在台灣被做成現象級話題——代表拉亞有能力放大<span class="em">任何有故事的品牌</span>。而 CP 的正宗泰味，是下一個、也是契合度最高的題材。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 VALUE EXCHANGE LOOP -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head reveal">
+      <p class="eyebrow"><span class="num">03</span> 核心邏輯 · 價值放大器</p>
+      <h2>拉亞，是 CP 泰味的<span class="accent">價值放大器</span>。</h2>
+      <p class="lead">CP 把核心資產交給拉亞，在成熟市場被放大成現象級的品牌價值，再以更強的姿態回流泰國。雙方都從這個循環中得到原本拿不到的東西。</p>
+    </div>
+    <div class="loop-stage reveal">
+      <div class="loop-diagram">
+        <div class="node-col left">
+          <div class="node-label">CP → 拉亞　提供資產</div>
+          <div class="item"><span class="k">正宗泰味血統</span><span class="s">CPF·PIM 的泰式風味 know-how 與配方底蘊</span></div>
+          <div class="item"><span class="k">全球供應鏈</span><span class="s">世界最大蝦類/水產來源，可進口蛋白</span></div>
+          <div class="item"><span class="k">研發引擎</span><span class="s">CPF·CPRAM·PIM 的產品共創與量產能力</span></div>
+          <div class="item"><span class="k">7-Eleven 生態系</span><span class="s">泰國市場、通路與品牌背書</span></div>
+        </div>
+        <div class="loop-core">
+          <svg viewBox="0 0 220 220" role="img" aria-label="價值放大器示意圖">
+            <defs>
+              <marker id="arrowA" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#DD8123"></path></marker>
+              <marker id="arrowB" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1F6F5C"></path></marker>
+            </defs>
+            <path class="flow" d="M40,86 A70,70 0 0 1 180,86" fill="none" stroke="#DD8123" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrowA)"></path>
+            <path class="flow rev" d="M180,134 A70,70 0 0 1 40,134" fill="none" stroke="#1F6F5C" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrowB)"></path>
+            <circle cx="110" cy="110" r="58" fill="none" stroke="#DED3BF" stroke-width="1"></circle>
+          </svg>
+          <div class="cap"><div class="big">價值<br>放大</div><div class="sm">VALUE AMPLIFIER</div></div>
+        </div>
+        <div class="node-col right">
+          <div class="node-label">拉亞 → CP　回流價值</div>
+          <div class="item"><span class="k">旗艦展示櫥窗</span><span class="s">成熟市場 500 門市的品牌曝光舞台</span></div>
+          <div class="item"><span class="k">聯名放大引擎</span><span class="s">把 CP 泰味做成現象級話題的能力</span></div>
+          <div class="item"><span class="k">數位聲量與會員</span><span class="s">Laya Now 百萬會員的數據與觸及</span></div>
+          <div class="item"><span class="k">回流通路</span><span class="s">成功品項衣錦還鄉，重返泰國 7-11 通路</span></div>
+        </div>
+      </div>
+      <p class="loop-tag">CP 的泰味，被台灣早午餐龍頭<span class="em">放大</span>，<br>再以更強的姿態<span class="em">衣錦還鄉</span>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 OPPORTUNITIES -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head reveal">
+      <p class="eyebrow"><span class="num">04</span> 機會點</p>
+      <h2>兩條<span class="accent">產品線</span>，<br>一個共創引擎在背後推。</h2>
+      <p class="lead">合作模型聚焦兩條可落地的產品線——各自結合 CP 的核心資產，創造拉亞市場的差異化價值；CPF·CPRAM·PIM 的研發引擎，是讓兩條線跑起來的手段。</p>
+    </div>
+    <div class="opp-grid reveal">
+      <div class="opp">
+        <div class="ono">產品線 01</div>
+        <div class="borrow">核心資產 — CP/PIM 正宗泰味血統</div>
+        <h3>泰式風味醬料</h3>
+        <p>以<b>泰式美乃滋</b>為首，可延伸其他泰式風味。<b>換味不換產線</b>的最大槓桿——同一條雞腿堡、米堡、薯條、蛋餅產線，換一個醬就整批變成「泰式風味系列」。醬料＝可規模化、可零售的<b>風味 IP</b>。</p>
+      </div>
+      <div class="opp">
+        <div class="ono">產品線 02</div>
+        <div class="borrow">核心資產 — CP 全球蝦類供應鏈</div>
+        <h3>水產蛋白主食</h3>
+        <p>以 <b>黃金蝦餅米堡</b>為首；若法規可行，延伸其他<b>泰式雞肉堡</b>。CP 是全球最大蝦商，水產是繞過肉品進口限制、又能講「CP 供應鏈」故事的<b>可進口蛋白路徑</b>。</p>
+      </div>
+      <div class="opp means">
+        <div class="ono">背後引擎</div>
+        <div class="borrow">核心資產 — CPF·CPRAM·PIM 研發力</div>
+        <h3>聯合共創（手段）</h3>
+        <p>不是另一個產品，而是讓上面兩條線得以成立的<b>機制</b>：泰式風味 know-how、快速打樣、雙向上市。MOU 與資源互換，都是把這個引擎啟動的手段。</p>
+      </div>
+    </div>
+    <div class="feas reveal">
+      <div class="ft">可行性檢核 · Feasibility Check</div>
+      <div class="feas-rows">
+        <div class="frow ok"><span class="mk">✓</span><div><b>醬料／咖哩醬／調味料（非肉）</b>　商業滅菌、符合食安標示即可進口或在地生產。</div></div>
+        <div class="frow ok"><span class="mk">✓</span><div><b>蝦／水產（生・熟・裹粉）</b>　可進口，須逐項通過防檢與食安查驗。</div></div>
+        <div class="frow ok"><span class="mk">✓</span><div><b>椰漿・椰子製品・米・麵</b>　植物性，進口門檻低。</div></div>
+        <div class="frow mb"><span class="mk">△</span><div><b>商業滅菌含肉調理包</b>　條件式可行，須個案符合輸入規定。</div></div>
+        <div class="frow no"><span class="mk">✕</span><div><b>泰國雞肉／豬肉（含熟製、真空包）</b>　受防疫禁令限制，不可進口。</div></div>
+      </div>
+      <div class="foot"><b>落地解法：</b>產品線 02 若要做泰式雞肉堡，所需的雞、豬蛋白由 CP 集團在台灣的自家支援單位在地生產——既符合台灣食安規範、又能快速量產，讓合作在執行面完全落地。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 FLAGSHIP PRODUCTS -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head reveal">
+      <p class="eyebrow"><span class="num">05</span> 指標性產品</p>
+      <h2>把合作的價值，做成<span class="accent">看得到、吃得到</span>的東西。</h2>
+      <p class="lead">兩條產品線各推一個指標性產品示範整套邏輯如何落地，再加上可同步開發的延伸品項。</p>
+    </div>
+    <div class="prod-grid reveal">
+      <div class="prod">
+        <div class="ptag">產品線 01 · 泰式風味醬料</div>
+        <h3>泰式美乃滋醬料平台</h3>
+        <p class="psub">同一乳化母體，延伸三款招牌，撬動整條 menu（並可再延伸其他泰式風味）。</p>
+        <div class="sauces">
+          <div class="sauce"><span class="swatch" style="background:#E89A2C"></span><div><div class="sn">泰式甜辣美乃滋</div><div class="sd">融入甜雞醬（Nam Jim Kai）風味</div></div></div>
+          <div class="sauce"><span class="swatch" style="background:#C53A28"></span><div><div class="sn">Sriracha 蒜香美乃滋</div><div class="sd">泰式酸辣與蒜味，比美式更鮮明</div></div></div>
+          <div class="sauce"><span class="swatch" style="background:#9DBE5A"></span><div><div class="sn">Nam Jim 海鮮美乃滋</div><div class="sd">萊姆・魚露・辣椒・香菜，專配蝦</div></div></div>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="ptag">產品線 02 · 水產蛋白主食</div>
+        <h3>黃金蝦餅米堡</h3>
+        <p class="psub">以 CP 蝦漿做酥炸蝦餅，落在拉亞既有的米堡產線上。</p>
+        <ul>
+          <li><b>餅體</b>　CP 全球蝦源製成酥炸蝦餅，可進口或在台共製</li>
+          <li><b>組合</b>　酥脆蝦餅 ＋ Nam Jim 海鮮美乃滋 ＋ 香菜/打拋葉 ＋ 米香堡體</li>
+          <li><b>研發重點</b>　蝦含量與 Q 彈口感、出餐保溫下的酥度維持、甲殼類過敏標示</li>
+          <li><b>延伸</b>　或其他泰式雞肉堡——由 CP 在台支援單位在地生產，法規可行即展開</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ext reveal">
+      <div class="et">可同步開發的延伸品項 · 皆通過可行性檢核</div>
+      <div class="ext-chips">
+        <span class="echip"><b>打拋風味</b>米堡／蛋餅</span>
+        <span class="echip"><b>Tom Yum</b> 酸辣沾醬雞塊</span>
+        <span class="echip"><b>沙嗲</b>花生風味烤雞堡</span>
+        <span class="echip"><b>椰漿系</b>甜點（椰漿吐司・煉乳金絲）</span>
+        <span class="echip"><b>泰奶／泰式咖啡</b>飲品線</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 ROADMAP -->
+<section class="blk">
+  <div class="wrap">
+    <div class="blk-head reveal">
+      <p class="eyebrow"><span class="num">06</span> 合作藍圖</p>
+      <h2>把價值放大，<span class="accent">分階段落地</span>。</h2>
+      <p class="lead">MOU、口味共創、資源互換，都是把這個閉環變現的手段。法規查驗與研發並行，確保產品在投產前就確認可行。</p>
+    </div>
+    <div class="road reveal">
+      <div class="phase lead-phase">
+        <div class="when"><span class="pn">Phase 0</span>M0–2</div>
+        <div class="body"><h4>戰略結盟</h4><p>簽署戰略合作 <b>MOU</b>，定義合作範圍、IP 與利潤分配、治理機制，並成立聯合工作小組。先把夥伴關係的地基打穩。</p></div>
+      </div>
+      <div class="phase">
+        <div class="when"><span class="pn">Phase 1</span>M2–6</div>
+        <div class="body"><h4>聯合研發</h4><p>PIM／CPRAM 開發泰式醬料平台與蝦餅米堡；台灣端進行在地試做。<b>法規查驗與研發並行</b>（食安、防檢、甲殼類標示），同步於拉亞門市做消費者測試。</p></div>
+      </div>
+      <div class="phase">
+        <div class="when"><span class="pn">Phase 2</span>M6–9</div>
+        <div class="body"><h4>試賣上市</h4><p>精選門市試賣 → 全台 500 店上市。啟動行銷宣傳，把產品轉化為市場話題與銷量。</p></div>
+      </div>
+      <div class="phase">
+        <div class="when"><span class="pn">Phase 3</span>M9–18+</div>
+        <div class="body"><h4>雙向回流</h4><p>成功品項<b>衣錦還鄉</b>，回流泰國 7-11／CP 通路；瓶裝醬料零售化；建立常設聯合開發平台，並評估拉亞循 CP 通路進軍東南亞。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 VISION -->
+<section class="blk vision">
+  <div class="wrap reveal">
+    <p class="eyebrow"><span class="num">07</span> 願景</p>
+    <h2>一個旗艦級的台泰夥伴關係：<br>在台灣<span class="em">贏</span>，再回到<span class="em">泰國</span>。</h2>
+    <p>拉亞讓 CP 的泰味在成熟市場被放大、品牌同步升級；CP 看到自己的泰味衣錦還鄉。這不是一次性的聯名，而是一個彼此成就的長期循環。</p>
+    <div class="sign">
+      <span>拉亞漢堡 Laya Burger <b>×</b> CP Group</span>
+      <span class="mono">STRATEGIC PARTNERSHIP PROPOSAL · 2026</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function(){
+    var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(rm || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
+</body>
+</html>
